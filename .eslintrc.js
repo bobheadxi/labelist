@@ -13,5 +13,8 @@ module.exports = {
         "ecmaVersion": 2018
     },
     "rules": {
+        "no-console": "off",
+        "quotes": ["error", "single"],
+        "camelcase": "off", // API objects are camelcase
     }
 };
