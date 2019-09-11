@@ -14,6 +14,8 @@ This will probably stop working at some point, but it seems to have been like
 this for quite a while. I imagine integrations might depend on this too, so I
 might be safe for the time being.
 
+There's a bit more context [in my blog post](https://bobheadxi.dev/labelist/).
+
 ## Example
 
 Create a wanna-be-labelled task with your free Todoist account:
