@@ -51,6 +51,7 @@ async function appendLabel(event) {
     content: tags.reduce((acc, t) => acc.replace(t, ''), content || '').trim(),
     label_ids: tags.reduce((acc, t) => {
       const l = userLabels.find(v => `@${v.name}` === t);
+      // TODO: if label doesn't exist, maybe this should create the label
       if (l && !acc.includes(l.id)) acc.push(l.id);
       return acc;
     }, labels || []),
