@@ -1,0 +1,6 @@
+{
+  "name": "labelist",
+  "env": {
+    "TODOIST_API_TOKEN": "@todoist_api_token"
+  }
+}
