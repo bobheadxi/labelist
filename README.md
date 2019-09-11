@@ -26,7 +26,25 @@ With the function deployed, a few seconds later:
 
 ## Setup
 
-I have this deployed using [zeit.co](https://zeit.co). To get the webhooks,
+I have this deployed using [Zeit Now](https://zeit.co). To get the webhooks,
 you'll need to set up a [Todoist application](https://developer.todoist.com/appconsole.html).
 
-TODO
+1. Create a [Todoist application](https://developer.todoist.com/appconsole.html).
+2. Get an [API token for your Todoist account](https://todoist.com/prefs/integrations).
+3. Create an account in [Zeit Now](https://zeit.co) and download the [CLI](https://github.com/zeit/now).
+4. Set the token in Now:
+
+```sh
+now secrets add todoist_api_token $MY_TOKEN
+```
+
+5. Deploy the function:
+
+```sh
+npm run deploy
+```
+
+6. Find the alias address (probably looks something like `labelist.bobheadxi.now.sh`)
+  in the Zeit Now UI, and the webhook endpoint `$ZEIT_ADDR/api/hooks` to your
+  [Todoist application](https://developer.todoist.com/appconsole.html) under
+  "webhooks".
